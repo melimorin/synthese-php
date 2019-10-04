@@ -23,3 +23,33 @@ function listeController() {
     $todos = listeTaches();
     include("views/listeTaches.php");
 }
+
+function accueil() {
+    include("views/accueil.php");
+}
+
+function tachesModifierController() {
+    // recuperer les informations du film
+    $nom = getTache($_GET["id"]);
+
+
+    // afficher formulaire
+    include("views/modifier.php");
+}
+
+function modifierSubmitController() {
+    // mettre a jour le film
+    modifierTache($_POST["id"], $_POST["titre"]);
+    // redirection vers liste 
+    header("location:listeTaches.php");
+    exit();
+
+}
+
+function tacheSupprimer() {
+    // supprimer le film
+    supprimertache($_GET["id"]);
+    // redirection
+    header("location:listeTaches.php");
+    exit();
+}

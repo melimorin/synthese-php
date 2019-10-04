@@ -16,6 +16,10 @@
         <input type="number" name="priorite" min="1" max="10">
         <input type="submit" value="Enregister">
     </form>
+
+    <form action="accueil.php">
+        <input type="submit" value="Retourner a l'accueil"/>
+    </form>
 </body>
 </html>
 

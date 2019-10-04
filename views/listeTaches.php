@@ -14,9 +14,14 @@
         foreach($todos as $todo) { ?>
         <div>
             <p><?php echo $todo["titre"]; ?></p>
-            
+            <a href="tacheModifier.php?id=<?php echo $todo["id"]; ?>">Modifier</a>
+            <a href="tacheSupprimer.php?id=<?php echo $todo["id"]; ?>">Supprimer</a>
          </div>
          <?php }
     ?>
+    
+    <form action="accueil.php">
+        <input type="submit" value="Retourner a l'accueil"/>
+    </form>
 </body>
 </html>

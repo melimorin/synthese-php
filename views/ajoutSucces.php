@@ -10,5 +10,8 @@
 <body>
     <h1>La taches a ete ajoute</h1>
     <a href="./listeTaches.php">Liste de tache ici</a>
+    <form action="accueil.php">
+        <input type="submit" value="Retourner a l'accueil"/>
+    </form>
 </body>
 </html>
