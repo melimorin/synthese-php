@@ -8,7 +8,7 @@
     <title>Page ajout</title>
 </head>
 <body>
-<!-- formulaire d'ajout des actualites -->
+<!-- formulaire d'ajout des taches -->
     <h1>Page d'ajout</h1>
     <form action="ajoutSucces.php" method="post">
         <input type="text" name="titre" placeholder="Titre de la tache"> <br>

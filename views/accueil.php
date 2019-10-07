@@ -17,6 +17,9 @@
         <form action="listeTaches.php">
             <input type="submit" value="Liste de taches"/>
         </form>
+        <form action="login.php">
+            <input type="submit" value="Page de connexion"/>
+        </form>
     
     
 </body>

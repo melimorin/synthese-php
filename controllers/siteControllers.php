@@ -28,6 +28,10 @@ function accueil() {
     include("views/accueil.php");
 }
 
+function connexion() {
+    include("utilisateurs/views/login.php");
+}
+
 function tachesModifierController() {
     // recuperer les informations du film
     $nom = getTache($_GET["id"]);
